@@ -378,3 +378,39 @@ if __name__ == "__main__":
         failed_users = ", ".join(failed_users)
         print(f'[{succeeded_users}] 每日一报提交成功，[{failed_users}] 每日一报提交失败，查看日志获取详情')
         sys.exit(1)
+# encoding:utf-8
+import requests
+api = "https://sctapi.ftqq.com/SCT122737TO6YAUCqbPQfik9H9wHxtupyA.send"
+title = u"打卡成功！"
+content = """
+许小维真可爱！
+"""
+data = {
+   "text":title,
+   "desp":content
+}
+req = requests.post(api,data = data)
+# encoding:utf-8
+import requests
+api = "https://sctapi.ftqq.com/SCT122737TO6YAUCqbPQfik9H9wHxtupyA.send"
+title = u"打卡成功！"
+content = """
+许小维真可爱！
+"""
+data = {
+   "text":title,
+   "desp":content
+}
+req = requests.post(api,data = data)
+# encoding:utf-8
+import requests
+api = "https://sctapi.ftqq.com/SCT122850T8tmkTPGtELVNTGaGCP12nad1.send"
+title = u"叮咚！您老婆设定的自动每日一报又成功了！"
+content = """
+没什么别的意思，就是想要炫耀一下，快去夸夸你的宝贝老婆吧，嗷呜嗷呜~
+"""
+data = {
+   "text":title,
+   "desp":content
+}
+req = requests.post(api,data = data)
